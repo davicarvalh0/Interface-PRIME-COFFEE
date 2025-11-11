@@ -1,0 +1,230 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background-color: #f5e5c0;
+  color: #3a1f04;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #32160f;
+  color: #fff;
+  padding: 15px 60px;
+}
+
+header .logo img {
+  height: 65px;
+}
+
+.menu-login {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  color: #c69c48;
+  text-decoration: none;
+  font-family: Poppins;
+  font-size: 600;
+  font-weight: 1.05rem;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+.login {
+  background-color: #000;
+  border: none;
+  color: #c69c48;
+  padding: 8px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.login:hover {
+  background-color: #fff;
+}
+
+.comeco {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 10%;
+}
+
+.comeco-texto {
+  width: 55%;
+}
+
+.comeco-texto h1 {
+  font-family: Playfair Display;
+  font-size: 2.5rem;
+  color: #32160f;
+}
+
+.comeco-texto p {
+  font-family: Poppins;
+  color: #7a5230;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+.cafe-image img {
+  border-radius: 12px;
+  width: 380px;
+}
+
+.assinatura {
+  background-color: #dcc7a1 !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 80px 10%;
+  gap: 60px;
+}
+
+.assinatura .texto {
+  max-width: 450px;
+}
+
+.assinatura h3 {
+  text-transform: uppercase;
+  color: #4a2a0a;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.assinatura h2 {
+  font-size: 2rem;
+  color: #3a1f04;
+}
+
+.assinatura p {
+  margin: 20px 0;
+  line-height: 1.5;
+}
+
+.assinatura button {
+  background-color: #3a1f04;
+  color: #fff;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.assinatura button:hover {
+  background-color: #2c1603;
+}
+
+.assinatura img {
+  border-radius: 20px;
+  width: 300px;
+}
+
+.feedback {
+  padding: 80px 10%;
+  background-color: #f5e5c0;
+  text-align: center;
+}
+
+.feedback h2 {
+  font-family: Playfair Display;
+  color: #32160f;
+  margin-bottom: 30px;
+  font-size: 50px;
+}
+
+.caixas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
+}
+
+.caixa {
+  background-color: #7a5230;
+  color: #fff;
+  text-align: justify;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  color: #7a5230;
+  text-align: center;
+  padding: 30px 10%;
+  position: relative;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+footer img {
+  height: 100px;
+}
+
+footer .redes_sociais a {
+  color: #7a5230;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+#topo {
+  right: 10%;
+  bottom: 20px;
+  background-color: #000;
+  border: none;
+  color: #fff;
+  padding: 4px 20px;
+  font-size: 0.85rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* responsivo */
+@media (max-width: 900px) {
+  .assinatura,
+  .assinatura {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .assinatura-text,
+  .assinatura .texto {
+    width: 100%;
+  }
+
+  .cafe-image img,
+  .assinatura img {
+    width: 80%;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+}
