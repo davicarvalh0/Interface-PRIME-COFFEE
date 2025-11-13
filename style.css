@@ -92,7 +92,7 @@ nav a:hover {
   background-color: #dcc7a1 !important;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 40px 15%;
   gap: 60px;
 }
@@ -137,8 +137,7 @@ nav a:hover {
 
 .assinatura img {
   border-radius: 20px;
-  width: 630px;
-  height: 586px;
+  width: 300px;
 }
 
 .feedback {
@@ -229,10 +228,12 @@ footer .redes_sociais a {
     width: 80%;
     margin-top: 20px;
   }
-}
-
-@media (max-width: 768px) {
   footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+  header {
     flex-direction: column;
     text-align: center;
     gap: 15px;
