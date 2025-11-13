@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cardápio</title>
+    <link rel="stylesheet" href="cardapio.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="../Imagens/Logo - Cafeteria.svg" alt="Logo Prime Coffee" />
+      </div>
+      <nav>
+        <a href="#" class="recomendacao">Recomendação da Casa</a>
+        <a href="../index.html" class="inicio">Página Inicial</a>
+      </nav>
+    </header>
+    <main>
+      <section class="cards">
+        <img
+          class="card"
+          src="../Imagens/cafe - clássico.svg"
+          alt="Imagem do Café Clássico"
+        />
+        <img
+          card="card"
+          src="../Imagens/cafe - intenso.svg"
+          alt="Imagem do Café Intenso"
+        />
+        <img
+          class="card"
+          src="../Imagens/cafe - orgânico.svg"
+          alt="Imagem do Café Orgânico"
+        />
+        <img
+          class="card"
+          src="../Imagens/cafe - gourmet.svg"
+          alt="Imagem do Café Gourmet"
+        />
+        <img
+          class="card"
+          src="../Imagens/cafe - expresso gold.svg"
+          alt="Imagem do Café Expresso Gold"
+        />
+        <img
+          class="card"
+          src="../Imagens/cafe - vanilla essence.svg"
+          alt="Imagem do Café Vanilla Essence"
+        />
+        <img
+          class="card"
+          src="../Imagens/cafe - dark roast.svg"
+          alt="Imagem do Café Dark Roast"
+        />
+        <img
+          class="card"
+          src="../Imagens/cafe - caramel touch.svg"
+          alt="Imagem do Café Caramel Touch"
+        />
+      </section>
+      <section class="cards2">
+        <div class="cafeclassico">
+          <img
+            class="card2"
+            src="../Imagens/cafe - clássico.svg"
+            alt="Imagem do Café Clássico"
+          />
+          <p>
+            O sabor tradicional que nunca decepciona. Um café equilibrado, com
+            notas suaves de chocolate e leve acidez, perfeito para qualquer
+            momento do dia.
+          </p>
+        </div>
+        <div class="cafeintenso">
+          <img
+            card="card2"
+            src="../Imagens/cafe - intenso.svg"
+            alt="Imagem do Café Intenso"
+          />
+          <p>
+            Torrado mais forte, aroma marcante e corpo robusto. Ideal para quem
+            gosta de um café encorpado e cheio de personalidade.
+          </p>
+        </div>
+        <div class="cafeorganico">
+          <img
+            class="card2"
+            src="../Imagens/cafe - orgânico.svg"
+            alt="Imagem do Café Orgânico"
+          />
+          <p>
+            Cultivado sem agrotóxicos em nossa plantação sustentável. Sabor puro
+            e natural, com frescor que remete ao campo.
+          </p>
+        </div>
+        <div class="cafegourmet">
+          <img
+            class="card2"
+            src="../Imagens/cafe - gourmet.svg"
+            alt="Imagem do Café Gourmet"
+          />
+          <p>
+            Seleção especial dos melhores grãos da nossa fazenda. Possui notas
+            florais e frutadas, com finalização aveludada que encanta os
+            paladares mais exigentes.
+          </p>
+        </div>
+        <div class="cafeexpressogold">
+          <img
+            class="card2"
+            src="../Imagens/cafe - expresso gold.svg"
+            alt="Imagem do Café Expresso Gold"
+          />
+          <p>
+            Café exclusivo para espresso, com crema dourada e aroma intenso.
+            Perfeito para quem busca sofisticação em cada gole.
+          </p>
+        </div>
+        <div class="cafevanillaessence">
+          <img
+            class="card2"
+            src="../Imagens/cafe - vanilla essence.svg"
+            alt="Imagem do Café Vanilla Essence"
+          />
+          <p>
+            Café especial com um leve aroma natural de baunilha. Doce, delicado
+            e perfeito para momentos relaxantes.
+          </p>
+        </div>
+        <div class="cafedarkroast">
+          <img
+            class="card2"
+            src="../Imagens/cafe - dark roast.svg"
+            alt="Imagem do Café Dark Roast"
+          />
+          <p>
+            Torra escura e notas intensas de cacau. Um café forte, encorpado e
+            perfeito para quem busca energia extra no dia a dia.
+          </p>
+        </div>
+        <div class="cafecarameltouch">
+          <img
+            class="card2"
+            src="../Imagens/cafe - caramel touch.svg"
+            alt="Imagem do Café Caramel Touch"
+          />
+          <p>
+            Café especial com toque sutil de caramelo, levemente adocicado e
+            irresistível para acompanhar sobremesas.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <img src="../Imagens/Logo - Cafeteria.svg" alt="Logo Prime Coffee" />
+        <div class="redes_sociais">
+          <a>Instagram</a> | <a>Facebook</a> | <a>Twitter</a> | <a>Linkedin</a>
+        </div>
+      </div>
+      <button id="topo">Voltar ao Topo</button>
+    </footer>
+    <script>
+      const btnTopo = document.getElementById("topo");
+      btnTopo.addEventListener("click", () =>
+        window.scrollTo({ top: 0, behavior: "smooth" })
+      );
+    </script>
+  </body>
+</html>
