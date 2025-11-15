@@ -32,9 +32,9 @@ nav {
 nav a {
   color: #c69c48;
   text-decoration: none;
-  font-family: "Poppins";
-  font-size: 600;
-  font-weight: 1.05rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.05rem;
 }
 
 nav a:hover {
@@ -63,21 +63,19 @@ html {
 
 .comeco {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
-  padding: 40px 0 0 0;
-  padding-left: 10%;
-  padding-top: 5%;
+  padding: 60px 0%;
   gap: 40px;
-  margin: 0;
-  width: 90%;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .comeco-texto {
   font-family: "Poppins";
   color: #7a5230;
   max-width: 550px;
-  transform: translateY(-30px);
+  padding-left: 12%;
 }
 
 .comeco-texto h1 {
@@ -96,11 +94,16 @@ html {
   text-align: justify;
 }
 
+.cafe-image {
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .cafe-image img {
-  margin-top: -80px;
-  width: 550px;
+  width: 100%;
+  max-width: 420px;
   height: auto;
-  border-radius: 12px;
   object-fit: contain;
 }
 
@@ -148,7 +151,7 @@ html {
 .assinatura button:hover {
   background-color: #000;
   color: #fff;
-  transition: all 3 ease;
+  transition: all 0.3s ease;
 }
 
 .assinatura img {
@@ -236,78 +239,153 @@ footer .redes_sociais a {
 }
 
 /* responsividade feita com ia */
-
-/* ============================
-   RESPONSIVIDADE – INDEX
-   ============================ */
-@media (max-width: 768px) {
-  /* garante que nada estoure a largura */
-  body {
-    overflow-x: hidden;
+@media (max-width: 1024px) {
+  header {
+    padding: 15px 6%;
   }
 
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  /* SEÇÃO COMEÇO */
   .comeco {
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
-    padding: 40px 8%;
-    gap: 24px;
+    padding: 40px 3%;
+    gap: 20px;
+  }
+
+  .cafe-image {
+    max-width: 50%;
+  }
+
+  .cafe-image img {
+    max-width: 360px;
   }
 
   .comeco-texto {
-    width: 100%;
+    padding-left: 6%;
+    max-width: 450px;
   }
 
-  /* café explodindo */
-  .cafe-image img {
-    width: 100%;
-    max-width: 380px;
-    margin: 0 auto;
+  .comeco-texto h1 {
+    font-size: 3rem;
   }
 
-  /* ASSINATURA */
   .assinatura {
+    padding: 80px 8%;
+    margin-top: -80px;
+  }
+
+  .feedback {
+    padding: 70px 8%;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 15px 6%;
+  }
+
+  .menu-login {
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    gap: 15px;
+    max-width: 70%;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+  }
+
+  .comeco {
     flex-direction: column;
     align-items: center;
-    text-align: left;
-    padding: 40px 8%;
-    gap: 24px;
+    text-align: center;
+    justify-content: center;
+    padding: 40px 0%;
+    gap: 20px;
+  }
+
+  .comeco-texto {
+    padding-left: 0;
+    max-width: 900%;
+  }
+
+  .comeco-texto h1 {
+    font-size: 2.6rem;
+  }
+
+  .comeco-texto p {
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+  .cafe-image {
     width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .cafe-image img {
+    max-width: 260px;
+    height: auto;
+  }
+
+  .assinatura {
+    flex-direction: column;
+    padding: 60px 6%;
+    margin-top: 40px;
+    text-align: center;
+    gap: 30px;
   }
 
   .assinatura .texto {
     max-width: 100%;
   }
 
-  .assinatura img {
-    width: 100%;
-    max-width: 450px;
-    margin: 0 auto;
-    display: block;
+  .assinatura h2 {
+    font-size: 1.7rem;
   }
 
-  /* FEEDBACK */
   .caixas {
     grid-template-columns: 1fr;
-    gap: 18px;
-    width: 100%;
+  }
+
+  .caixa {
+    padding: 25px 20px;
   }
 
   footer {
     flex-direction: column;
     text-align: center;
-    gap: 18px;
-    padding: 30px 8%;
+    gap: 20px;
+  }
+
+  .footer {
+    flex-direction: column;
   }
 
   #topo {
-    padding: 6px 16px;
-    min-width: 140px;
+    margin-left: 0;
+    width: 100%;
+    max-width: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    max-width: 100%;
+    justify-content: center;
+  }
+
+  .comeco-texto h1 {
+    font-size: 2.4rem;
+  }
+
+  .feedback h2 {
+    font-size: 1.6rem;
   }
 }
