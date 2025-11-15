@@ -140,6 +140,8 @@ footer .redes_sociais a {
   font-size: 1.2rem;
 }
 
+/* responsividade feita com ia */
+
 @media (max-width: 1200px) {
   .card-horizontal {
     grid-template-columns: 150px 220px 1fr;
