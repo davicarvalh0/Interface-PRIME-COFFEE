@@ -174,7 +174,7 @@ html {
 
 .caixas {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 20px;
 }
 
@@ -237,77 +237,77 @@ footer .redes_sociais a {
 
 /* responsividade feita com ia */
 
-@media (max-width: 800px) {
-  header {
-    flex-direction: column;
-    text-align: center;
-    gap: 15px;
-    padding: 20px 5%;
+/* ============================
+   RESPONSIVIDADE – INDEX
+   ============================ */
+@media (max-width: 768px) {
+  /* garante que nada estoure a largura */
+  body {
+    overflow-x: hidden;
   }
 
-  nav {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+  img {
+    max-width: 100%;
+    height: auto;
   }
 
+  /* SEÇÃO COMEÇO */
   .comeco {
-    flex-direction: column !important;
+    flex-direction: column;
+    align-items: center;
     text-align: left;
-    padding: 40px 5%;
-    gap: 30px;
+    padding: 40px 8%;
+    gap: 24px;
   }
 
   .comeco-texto {
-    width: 100% !important;
-    padding-right: 0 !important;
+    width: 100%;
   }
 
+  /* café explodindo */
   .cafe-image img {
-    margin: 0 auto !important;
-    width: 90% !important;
-    height: auto !important;
-  }
-
-  .assinatura {
-    flex-direction: column !important;
-    text-align: left;
-    padding: 40px 5%;
-    gap: 30px;
-  }
-
-  .assinatura img {
-    width: 90% !important;
+    width: 100%;
+    max-width: 380px;
     margin: 0 auto;
   }
 
-  .assinatura .texto {
-    width: 100% !important;
-  }
-
-  .caixas {
-    grid-template-columns: 1fr !important;
-    gap: 20px;
-  }
-
-  .caixa {
+  /* ASSINATURA */
+  .assinatura {
+    flex-direction: column;
+    align-items: center;
     text-align: left;
+    padding: 40px 8%;
+    gap: 24px;
+    width: 100%;
+  }
+
+  .assinatura .texto {
+    max-width: 100%;
+  }
+
+  .assinatura img {
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  /* FEEDBACK */
+  .caixas {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    width: 100%;
   }
 
   footer {
     flex-direction: column;
-    gap: 20px;
     text-align: center;
-    padding: 25px 5%;
-  }
-
-  footer img {
-    margin-bottom: 10px;
+    gap: 18px;
+    padding: 30px 8%;
   }
 
   #topo {
-    width: 80%;
-    max-width: 240px;
-    margin: 0 auto;
+    padding: 6px 16px;
+    min-width: 140px;
   }
 }

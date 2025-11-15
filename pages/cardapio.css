@@ -213,70 +213,52 @@ footer .redes_sociais a {
 
 /* responsividade feita com ia */
 
-/* ===========================
-   RESPONSIVIDADE (MOBILE)
-   ===========================*/
-@media (max-width: 600px) {
-  header {
-    padding: 15px 20px;
+/* ============================
+   RESPONSIVIDADE – CARDÁPIO
+   ============================ */
+@media (max-width: 768px) {
+  /* GRID DOS CAFÉS (miniaturas) */
+  .cards {
+    display: flex;
     flex-direction: column;
-    gap: 15px;
-  }
-
-  header nav {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-  }
-
-  .banner-cardapio {
-    flex-direction: column;
-    text-align: center;
-    padding: 40px 20px;
+    align-items: center;
     gap: 20px;
+    padding: 20px 8%;
   }
 
-  .banner-cardapio img {
-    width: 80%;
-    max-width: 250px;
+  .card {
+    width: 100%;
+    max-width: 300px;
   }
 
-  .navbar-buttons {
+  .card-img {
+    width: 140px;
+    height: 140px;
+  }
+
+  /* CARDS GRANDES (CLÁSSICO, INTENSO, etc.) */
+  .card-horizontal {
+    display: flex; /* ignora grid antigo */
     flex-direction: column;
-    gap: 10px;
-  }
-
-  .produtos-grid {
-    grid-template-columns: 1fr;
+    text-align: left;
+    gap: 16px;
     padding: 20px;
-    gap: 25px;
+    width: 100%;
   }
 
-  .produto-card {
-    flex-direction: column;
+  .card-horizontal img {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto;
+  }
+
+  .nome-e-preco {
+    align-items: center;
     text-align: center;
-    padding: 20px;
+    width: 100%;
   }
 
-  .produto-card img {
-    width: 120px;
-    margin-bottom: 15px;
-  }
-
-  .footer {
-    flex-direction: column;
-    text-align: center;
-    gap: 15px;
-    padding: 25px;
-  }
-
-  .footer .redes_sociais {
-    flex-direction: column;
-    gap: 8px;
-  }
-
-  .btn-topo {
-    width: 130px;
-    height: 38px;
+  .card-horizontal p {
+    text-align: justify;
   }
 }
