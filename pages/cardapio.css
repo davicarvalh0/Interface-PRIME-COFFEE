@@ -213,82 +213,70 @@ footer .redes_sociais a {
 
 /* responsividade feita com ia */
 
-@media (max-width: 900px) {
-  .cards {
-    grid-template-columns: repeat(2, 1fr);
+/* ===========================
+   RESPONSIVIDADE (MOBILE)
+   ===========================*/
+@media (max-width: 600px) {
+  header {
+    padding: 15px 20px;
+    flex-direction: column;
+    gap: 15px;
   }
-}
 
-@media (max-width: 500px) {
-  .cards {
-    grid-template-columns: repeat(1, 1fr);
+  header nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
   }
-}
 
-@media (max-width: 1100px) {
-  .card-horizontal {
-    grid-template-columns: 150px 200px 1fr;
-  }
-}
-
-@media (max-width: 850px) {
-  .card-horizontal {
-    grid-template-columns: 1fr;
+  .banner-cardapio {
+    flex-direction: column;
     text-align: center;
+    padding: 40px 20px;
+    gap: 20px;
+  }
+
+  .banner-cardapio img {
+    width: 80%;
+    max-width: 250px;
+  }
+
+  .navbar-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .produtos-grid {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    gap: 25px;
+  }
+
+  .produto-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .produto-card img {
+    width: 120px;
+    margin-bottom: 15px;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
     padding: 25px;
   }
 
-  .card-horizontal img {
-    margin: 0 auto;
-  }
-
-  .nome-e-preco {
-    align-items: center;
-    margin-top: 10px;
-  }
-
-  .card-horizontal p {
-    grid-column: 1;
-    margin-top: 15px;
-    text-align: center;
-  }
-}
-
-@media (max-width: 500px) {
-  .card-horizontal img {
-    width: 120px;
-  }
-
-  .nome-e-preco h1 {
-    font-size: 1.6rem;
-  }
-
-  .nome-e-preco span {
-    font-size: 1.2rem;
-  }
-
-  .card-horizontal p {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 650px) {
-  header {
+  .footer .redes_sociais {
     flex-direction: column;
-    gap: 15px;
-    padding: 20px 10%;
-    text-align: center;
+    gap: 8px;
   }
 
-  nav {
-    gap: 15px;
-  }
-}
-
-@media (max-width: 650px) {
-  footer {
-    flex-direction: column;
-    text-align: center;
-    gap: 15px;
+  .btn-topo {
+    width: 130px;
+    height: 38px;
   }
 }
