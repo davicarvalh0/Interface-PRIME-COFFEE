@@ -41,6 +41,10 @@ nav a:hover {
   color: #fff;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .login {
   background-color: #000;
   border: none;
@@ -105,7 +109,7 @@ nav a:hover {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 40px 15%;
+  padding: 120px 15%;
   margin-top: -120px;
   gap: 60px;
 }
@@ -139,7 +143,6 @@ nav a:hover {
   border: none;
   padding: 10px 25px;
   border-radius: 21px;
-  cursor: pointer;
 }
 
 .assinatura button:hover {
@@ -171,7 +174,7 @@ nav a:hover {
 
 .caixas {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
 }
 
@@ -199,6 +202,7 @@ footer {
   text-align: center;
   padding: 30px 10%;
   position: relative;
+  align-items: center;
 }
 
 .footer {
@@ -231,7 +235,7 @@ footer .redes_sociais a {
   transition: all 0.2s ease;
 }
 
-/* responsivo */
+/* responsividade feita com ia */
 @media (max-width: 900px) {
   .assinatura,
   .assinatura {

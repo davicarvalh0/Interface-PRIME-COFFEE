@@ -19,6 +19,10 @@ header {
   padding: 15px 10%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .inicio {
   font-family: "Poppins";
   background-color: #000;
@@ -63,6 +67,11 @@ header {
   gap: 25px;
   padding: 40px 10%;
   justify-items: center;
+  justify-content: center;
+}
+
+.cards a {
+  text-decoration: none;
 }
 
 .cards2 {
@@ -169,6 +178,7 @@ footer {
   text-align: center;
   padding: 30px 10%;
   position: relative;
+  align-items: center;
 }
 
 .footer {
@@ -200,6 +210,8 @@ footer .redes_sociais a {
   cursor: pointer;
   transition: all 0.2s ease;
 }
+
+/* responsividade feita com ia */
 
 @media (max-width: 1200px) {
   .cards {

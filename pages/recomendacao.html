@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cardápio</title>
+    <link rel="stylesheet" href="recomendacao.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="../Imagens/Logo - Cafeteria.svg" alt="Logo Prime Coffee" />
+      </div>
+      <nav>
+        <a href="./cardapio.html" class="todos-produtos">Todos os Produtos</a>
+      </nav>
+    </header>
+    <main>
+        <section class="cards2">
+        <div class="card-horizontal">
+          <img
+            src="../Imagens/cafe - clássico.svg"
+            alt="Imagem do Café Clássico"
+          />
+          <div class="nome-e-preco">
+            <h1>Clássico</h1>
+            <span class="preco">R$ 8,99</span>
+          </div>
+          <p>
+            O sabor tradicional que nunca decepciona. Um café equilibrado, com
+            notas suaves de chocolate e leve acidez, perfeito para qualquer
+            momento do dia.
+          </p>
+        </div>
+        <div class="card-horizontal">
+          <img
+            src="../Imagens/cafe - gourmet.svg"
+            alt="Imagem do Café Gourmet"
+          />
+          <div class="nome-e-preco">
+            <h1>Gourmet</h1>
+            <span class="preco">R$ 14,99</span>
+          </div>
+          <p>
+            Seleção especial dos melhores grãos da nossa fazenda. Possui notas
+            florais e frutadas, com finalização aveludada que encanta os
+            paladares mais exigentes.
+          </p>
+        </div>
+        <div class="card-horizontal">
+          <img
+            src="../Imagens/cafe - expresso gold.svg"
+            alt="Imagem do Café Expresso Gold"
+          />
+          <div class="nome-e-preco">
+            <h1>Expresso Gold</h1>
+            <span class="preco">R$ 17,99</span>
+          </div>
+          <p>
+            Café exclusivo para espresso, com crema dourada e aroma intenso.
+            Perfeito para quem busca sofisticação em cada gole.
+          </p>
+        </div>
+        <div class="card-horizontal">
+          <img
+            src="../Imagens/cafe - caramel touch.svg"
+            alt="Imagem do Café Caramel Touch"
+          />
+          <div class="nome-e-preco">
+            <h1>Caramel Touch</h1>
+            <span class="preco">R$ 29,99</span>
+          </div>
+          <p>
+            Café especial com toque sutil de caramelo, levemente adocicado e
+            irresistível para acompanhar sobremesas.
+          </p>
+        </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <img src="../Imagens/Logo - Cafeteria.svg" alt="Logo Prime Coffee" />
+        <div class="redes_sociais">
+          <a>Instagram</a> | <a>Facebook</a> | <a>Twitter</a> | <a>Linkedin</a>
+        </div>
+      </div>
+      <button id="topo">Voltar ao Topo</button>
+    </footer>
+    <script>
+      const btnTopo = document.getElementById("topo");
+      btnTopo.addEventListener("click", () =>
+        window.scrollTo({ top: 0, behavior: "smooth" })
+      );
+    </script>
+  </body>
+</html>
