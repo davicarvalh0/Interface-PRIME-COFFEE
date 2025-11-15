@@ -242,6 +242,16 @@ footer .redes_sociais a {
     gap: 20px;
   }
 
+  @media (max-width: 700px) {
+    footer {
+      margin-top: 40px;
+    }
+  }
+
+  .cards2 {
+    padding-bottom: 60px;
+  }
+
   #topo {
     width: 100%;
     margin-top: 10px;

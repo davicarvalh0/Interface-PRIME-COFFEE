@@ -262,6 +262,11 @@ footer .redes_sociais a {
     margin-top: 20px;
   }
 
+  .assinatura img {
+    width: 90% !important;
+    max-width: 350px;
+  }
+
   footer {
     flex-direction: column;
     text-align: center;
