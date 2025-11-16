@@ -143,19 +143,34 @@ footer .redes_sociais a {
 /* responsividade feita com ia */
 
 @media (max-width: 768px) {
-  footer {
+  .card-horizontal {
+    display: flex;
     flex-direction: column;
     text-align: center;
-    gap: 20px;
-    padding: 30px 6%;
+    padding: 20px;
+    gap: 15px;
   }
 
-  footer img {
-    height: 80px;
+  .card-horizontal img {
+    width: 130px;
+    margin: 0 auto;
   }
 
-  #topo {
-    margin-top: 15px;
-    width: 100%;
+  .nome-e-preco {
+    align-items: center;
+    text-align: center;
+  }
+
+  .nome-e-preco h1 {
+    font-size: 2rem;
+  }
+
+  .nome-e-preco span {
+    font-size: 1.2rem;
+  }
+
+  .card-horizontal p {
+    font-size: 1rem;
+    padding: 0 10px;
   }
 }
