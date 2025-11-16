@@ -49,13 +49,19 @@ footer {
   color: #7a5230;
   text-align: center;
   padding: 30px 10%;
-  position: relative;
   align-items: center;
+}
+
+html,
+body {
+  height: 100%;
 }
 
 .footer {
   display: flex;
   align-items: center;
+  width: 100%;
+  flex-shrink: 0;
   gap: 20px;
 }
 
@@ -135,3 +141,21 @@ footer .redes_sociais a {
 }
 
 /* responsividade feita com ia */
+
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 30px 6%;
+  }
+
+  footer img {
+    height: 80px;
+  }
+
+  #topo {
+    margin-top: 15px;
+    width: 100%;
+  }
+}
