@@ -5,7 +5,6 @@ body {
 }
 
 main {
-  min-height: calc(100vh - 200px);
   display: block;
 }
 
@@ -169,7 +168,7 @@ footer .redes_sociais a {
 
   /* ----- CARDS ------ */
   .cards2 {
-    padding: 30px 5% 90px; /* mais espaço embaixo */
+    padding: 20px 5% 30px;
     gap: 20px;
   }
 
