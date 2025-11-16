@@ -80,18 +80,18 @@ footer .redes_sociais a {
 }
 
 #topo {
-  margin-left: -10%;
-  right: 10%;
-  bottom: 20px;
   background-color: #000;
   border: none;
   color: #fff;
   padding: 14px 40px;
-  height: auto;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.2s ease;
+  height: auto;
+
+  margin-left: auto;
+  transform: translateX(-100%);
 }
 
 .cards2 {
@@ -146,7 +146,6 @@ footer .redes_sociais a {
 }
 
 /* responsividade feita com ia */
-/* ----- HEADER ----- */
 @media (max-width: 768px) {
   /* ----- HEADER ----- */
   header {
@@ -224,14 +223,11 @@ footer .redes_sociais a {
 
   /* ----- BOTÃO "VOLTAR AO TOPO" ----- */
   #topo {
-    width: 100%; /* largura total no mobile */
+    width: 100%;
     margin-top: 10px;
-    padding: 14px; /* maior para caber texto */
+    padding: 14px;
     font-size: 1rem;
-
-    /* tira o alinhamento da direita e usa o normal */
-    margin-left: 0;
-    right: auto;
+    transform: none;
   }
 
   /* ----- EVITA QUALQUER ESTOURO LATERAL ----- */
