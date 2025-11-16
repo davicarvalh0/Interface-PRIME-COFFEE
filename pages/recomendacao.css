@@ -169,7 +169,7 @@ footer .redes_sociais a {
 
   /* ----- CARDS ----- */
   .cards2 {
-    padding: 10px 5% 15px; /* reduzido para tirar o espaço vazio */
+    padding: 10px 5% 60px;
     gap: 15px;
   }
 
