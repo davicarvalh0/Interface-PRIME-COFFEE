@@ -93,7 +93,7 @@ footer .redes_sociais a {
   display: flex;
   flex-direction: column;
   gap: 25px;
-  padding: 40px 10%;
+  padding: 40px 10% 80px;
 }
 
 .card-horizontal {
@@ -143,16 +143,42 @@ footer .redes_sociais a {
 /* responsividade feita com ia */
 
 @media (max-width: 768px) {
-  .card-horizontal {
-    display: flex;
+  /* HEADER */
+  header {
     flex-direction: column;
+    gap: 15px;
+    padding: 20px 6%;
     text-align: center;
-    padding: 20px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 15px;
   }
 
+  .todos-produtos {
+    padding: 8px 15px;
+    font-size: 0.85rem;
+  }
+
+  /* ----- CARDS ------ */
+  .cards2 {
+    padding: 30px 5% 90px; /* mais espaço embaixo */
+    gap: 20px;
+  }
+
+  .card-horizontal {
+    display: flex; /* quebra o grid */
+    flex-direction: column; /* imagem → título → texto */
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    padding: 20px;
+  }
+
   .card-horizontal img {
-    width: 130px;
+    width: 120px; /* reduz imagem */
     margin: 0 auto;
   }
 
@@ -162,15 +188,43 @@ footer .redes_sociais a {
   }
 
   .nome-e-preco h1 {
-    font-size: 2rem;
+    font-size: 2rem; /* reduz título */
   }
 
   .nome-e-preco span {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .card-horizontal p {
     font-size: 1rem;
+    line-height: 1.5;
     padding: 0 10px;
+  }
+
+  /* ----- FOOTER ------ */
+  footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 30px 6%;
+  }
+
+  footer img {
+    height: 70px;
+  }
+
+  footer .footer {
+    justify-content: center;
+  }
+
+  #topo {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  /* EVITA ESTOURO DE TELA */
+  * {
+    max-width: 100%;
+    overflow-x: hidden;
   }
 }
