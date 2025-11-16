@@ -80,13 +80,14 @@ footer .redes_sociais a {
 }
 
 #topo {
+  margin-left: -10%;
   right: 10%;
   bottom: 20px;
   background-color: #000;
   border: none;
   color: #fff;
-  padding: 6px 30px;
-  height: 40px;
+  padding: 14px 40px;
+  height: auto;
   font-size: 0.85rem;
   border-radius: 8px;
   cursor: pointer;
@@ -145,9 +146,9 @@ footer .redes_sociais a {
 }
 
 /* responsividade feita com ia */
-
+/* ----- HEADER ----- */
 @media (max-width: 768px) {
-  /* HEADER */
+  /* ----- HEADER ----- */
   header {
     flex-direction: column;
     gap: 15px;
@@ -166,15 +167,15 @@ footer .redes_sociais a {
     font-size: 0.85rem;
   }
 
-  /* ----- CARDS ------ */
+  /* ----- CARDS ----- */
   .cards2 {
-    padding: 10px 5% 15px;
+    padding: 10px 5% 15px; /* reduzido para tirar o espaço vazio */
     gap: 15px;
   }
 
   .card-horizontal {
     display: flex; /* quebra o grid */
-    flex-direction: column; /* imagem → título → texto */
+    flex-direction: column; /* imagem → texto */
     align-items: center;
     text-align: center;
     gap: 15px;
@@ -182,7 +183,7 @@ footer .redes_sociais a {
   }
 
   .card-horizontal img {
-    width: 120px; /* reduz imagem */
+    width: 120px; /* imagem menor */
     margin: 0 auto;
   }
 
@@ -192,7 +193,7 @@ footer .redes_sociais a {
   }
 
   .nome-e-preco h1 {
-    font-size: 2rem; /* reduz título */
+    font-size: 2rem;
   }
 
   .nome-e-preco span {
@@ -205,7 +206,7 @@ footer .redes_sociais a {
     padding: 0 10px;
   }
 
-  /* ----- FOOTER ------ */
+  /* ----- FOOTER ----- */
   footer {
     flex-direction: column;
     text-align: center;
@@ -221,12 +222,19 @@ footer .redes_sociais a {
     justify-content: center;
   }
 
+  /* ----- BOTÃO "VOLTAR AO TOPO" ----- */
   #topo {
-    width: 100%;
+    width: 100%; /* largura total no mobile */
     margin-top: 10px;
+    padding: 14px; /* maior para caber texto */
+    font-size: 1rem;
+
+    /* tira o alinhamento da direita e usa o normal */
+    margin-left: 0;
+    right: auto;
   }
 
-  /* EVITA ESTOURO DE TELA */
+  /* ----- EVITA QUALQUER ESTOURO LATERAL ----- */
   * {
     max-width: 100%;
     overflow-x: hidden;
