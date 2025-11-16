@@ -4,6 +4,11 @@ body {
   background-color: #dcc7a1;
 }
 
+main {
+  min-height: calc(100vh - 200px);
+  display: block;
+}
+
 nav {
   display: flex;
   align-items: center;
