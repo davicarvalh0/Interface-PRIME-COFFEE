@@ -281,46 +281,48 @@ body {
 }
 
 @media (max-width: 768px) {
+  /* HEADER */
   header {
     flex-direction: column;
-    align-items: flex-start;
-    gap: 15px;
-    padding: 15px 6%;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 5%;
     text-align: center;
   }
 
   .menu-login {
     width: 100%;
-    justify-content: space-between;
-    gap: 10px;
+    justify-content: center;
+    gap: 15px;
   }
 
   nav {
     flex-wrap: wrap;
-    gap: 15px;
-    max-width: 70%;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
   }
 
   nav a {
     font-size: 0.9rem;
   }
 
+  /* SEÇÃO INICIAL */
   .comeco {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    justify-content: center;
-    padding: 40px 0%;
-    gap: 20px;
+    padding: 40px 6%;
+    gap: 25px;
   }
 
   .comeco-texto {
-    padding: 0 6%;
     max-width: 100%;
+    padding: 0;
   }
 
   .comeco-texto h1 {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
   }
 
   .comeco-texto p {
@@ -328,55 +330,74 @@ body {
     text-align: justify;
   }
 
-  .cafe-image {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-
   .cafe-image img {
-    max-width: 260px;
-    height: auto;
+    max-width: 240px;
   }
 
+  /* ASSINATURA */
   .assinatura {
     flex-direction: column;
-    padding: 60px 6%;
-    margin-top: 40px;
+    padding: 50px 6%;
+    margin-top: 20px;
     text-align: center;
-    gap: 30px;
+    gap: 25px;
   }
 
-  .assinatura .texto {
+  .assinatura img {
     max-width: 100%;
   }
 
   .assinatura h2 {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
+  }
+
+  /* FEEDBACK (CAIXAS) */
+  .feedback {
+    padding: 60px 6%;
+  }
+
+  .feedback h2 {
+    font-size: 1.8rem;
   }
 
   .caixas {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   .caixa {
-    padding: 25px 20px;
+    padding: 22px 18px;
   }
 
+  /* FOOTER */
   footer {
     flex-direction: column;
     text-align: center;
     gap: 20px;
+    padding: 30px 5%;
   }
 
-  .footer {
-    flex-direction: column;
+  footer img {
+    height: 60px;
+  }
+
+  .redes_sociais img {
+    width: 32px;
+    height: 32px;
   }
 
   #topo {
-    margin-left: 0;
     width: 100%;
+    height: auto;
+    padding: 12px;
+    margin-left: 0;
     max-width: 220px;
+  }
+
+  /* PREVENÇÃO DE SCROLL LATERAL */
+  html,
+  body {
+    overflow-x: hidden;
   }
 }
 

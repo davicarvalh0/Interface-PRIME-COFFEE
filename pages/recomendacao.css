@@ -141,7 +141,7 @@ footer .redes_sociais img {
 
 /* responsividade feita com ia */
 @media (max-width: 768px) {
-  /* ----- HEADER ----- */
+  /* HEADER */
   header {
     flex-direction: column;
     gap: 15px;
@@ -160,23 +160,23 @@ footer .redes_sociais img {
     font-size: 0.85rem;
   }
 
-  /* ----- CARDS ----- */
+  /* CARDS */
   .cards2 {
-    padding: 10px 5% 120px;
-    gap: 15px;
+    padding: 20px 6% 100px;
+    gap: 20px;
   }
 
   .card-horizontal {
-    display: flex; /* quebra o grid */
-    flex-direction: column; /* imagem → texto */
+    display: flex;
+    flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 15px;
+    gap: 18px;
     padding: 20px;
   }
 
   .card-horizontal img {
-    width: 120px; /* imagem menor */
+    width: 120px;
     margin: 0 auto;
   }
 
@@ -199,19 +199,41 @@ footer .redes_sociais img {
     padding: 0 10px;
   }
 
+  /* FOOTER - Mobile perfeito */
   footer {
     flex-direction: column;
+    align-items: center;
     text-align: center;
     gap: 20px;
+    padding: 30px 6%;
   }
 
   .footer {
     flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  footer img {
+    height: 60px;
+  }
+
+  footer .redes_sociais img {
+    width: 32px;
+    height: 32px;
   }
 
   #topo {
-    margin-left: 0;
     width: 100%;
     max-width: 220px;
+    padding: 12px;
+    margin-left: 0;
+    font-size: 1rem;
+  }
+
+  /* EVITA QUALQUER SCROLL PRO LADO */
+  html,
+  body {
+    overflow-x: hidden;
   }
 }
