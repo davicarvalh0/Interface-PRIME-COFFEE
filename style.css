@@ -237,6 +237,11 @@ footer .redes_sociais img {
   transition: all 0.2s ease;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 /* responsividade feita com ia */
 @media (max-width: 1024px) {
   header {
@@ -281,6 +286,7 @@ footer .redes_sociais img {
     align-items: flex-start;
     gap: 15px;
     padding: 15px 6%;
+    text-align: center;
   }
 
   .menu-login {
@@ -309,8 +315,8 @@ footer .redes_sociais img {
   }
 
   .comeco-texto {
-    padding-left: 0;
-    max-width: 900%;
+    padding: 0 6%;
+    max-width: 100%;
   }
 
   .comeco-texto h1 {
