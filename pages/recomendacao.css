@@ -61,11 +61,20 @@ body {
   height: 100%;
 }
 
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  color: #7a5230;
+  text-align: center;
+  padding: 30px 10%;
+  position: relative;
+  align-items: center;
+}
+
 .footer {
   display: flex;
   align-items: center;
-  width: 100%;
-  flex-shrink: 0;
   gap: 20px;
 }
 
@@ -80,20 +89,18 @@ footer .redes_sociais a {
 }
 
 #topo {
+  right: 10%;
+  bottom: 20px;
   background-color: #000;
   border: none;
   color: #fff;
-  padding: 14px 40px;
-  font-size: 0.9rem;
+  padding: 6px 30px;
+  height: 40px;
+  font-size: 0.85rem;
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.2s ease;
-  height: auto;
-
-  margin-left: auto;
-  transform: translateX(-100%);
 }
-
 .cards2 {
   display: flex;
   flex-direction: column;

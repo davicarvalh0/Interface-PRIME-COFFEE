@@ -161,7 +161,9 @@ footer {
   justify-content: space-between;
   background-color: #fff;
   color: #7a5230;
+  text-align: center;
   padding: 30px 10%;
+  position: relative;
   align-items: center;
 }
 
@@ -183,6 +185,7 @@ footer .redes_sociais a {
 
 #topo {
   right: 10%;
+  bottom: 20px;
   background-color: #000;
   border: none;
   color: #fff;
@@ -191,6 +194,7 @@ footer .redes_sociais a {
   font-size: 0.85rem;
   border-radius: 8px;
   cursor: pointer;
+  transition: all 0.2s ease;
 }
 
 /* responsividade feita com ia */
