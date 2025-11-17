@@ -431,6 +431,12 @@ body {
   }
 }
 
+@media (max-width: 600px) {
+  .cafe-image {
+    display: none !important;
+  }
+}
+
 @media (max-width: 480px) {
   nav {
     max-width: 100%;
