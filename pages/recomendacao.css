@@ -212,34 +212,19 @@ footer .redes_sociais a {
     padding: 0 10px;
   }
 
-  /* ----- FOOTER ----- */
   footer {
     flex-direction: column;
     text-align: center;
     gap: 20px;
-    padding: 30px 6%;
   }
 
-  footer img {
-    height: 70px;
+  .footer {
+    flex-direction: column;
   }
 
-  footer .footer {
-    justify-content: center;
-  }
-
-  /* ----- BOTÃO "VOLTAR AO TOPO" ----- */
   #topo {
+    margin-left: 0;
     width: 100%;
-    margin-top: 10px;
-    padding: 14px;
-    font-size: 1rem;
-    transform: none;
-  }
-
-  /* ----- EVITA QUALQUER ESTOURO LATERAL ----- */
-  * {
-    max-width: 100%;
-    overflow-x: hidden;
+    max-width: 220px;
   }
 }
