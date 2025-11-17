@@ -203,25 +203,24 @@ footer {
   background-color: #fff;
   color: #7a5230;
   text-align: center;
-  padding: 30px 10%;
+  padding: 20px 10%;
   position: relative;
   align-items: center;
 }
 
 .footer {
+  flex-direction: column;
   display: flex;
   align-items: center;
-  gap: 20px;
 }
 
 footer img {
-  height: 100px;
+  height: 80px;
 }
 
-footer .redes_sociais a {
-  color: #7a5230;
-  text-decoration: none;
-  margin: 0 5px;
+footer .redes_sociais img {
+  width: 42px;
+  height: 42px;
 }
 
 #topo {
