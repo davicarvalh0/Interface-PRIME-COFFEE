@@ -265,12 +265,11 @@ body {
   }
 
   .cafe-image {
-    margin-left: 0;
+    display: none;
   }
 
-  .cafe-image img {
-    max-width: 280px;
-    width: 100%;
+  .cafe-image {
+    display: none !important;
   }
 }
 
@@ -329,7 +328,7 @@ body {
   }
 
   .cafe-image {
-    display: none;
+    display: none !important;
   }
 
   /* ASSINATURA */
