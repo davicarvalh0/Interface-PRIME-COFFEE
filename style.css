@@ -399,7 +399,7 @@ body {
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1026px) {
   .comeco {
     display: block;
     padding: 40px 16px; /* espaço igual dos dois lados */
@@ -427,7 +427,8 @@ body {
   }
 
   .cafe-image {
-    display: none !important;
+    max-width: 280px;
+    width: 100%;
   }
 }
 
