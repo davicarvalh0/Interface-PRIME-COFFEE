@@ -267,6 +267,10 @@ body {
   .cafe-image img {
     display: none !important;
   }
+
+  .assinatura {
+    margin-bottom: -100px !important; /* ajuste quanto quiser */
+  }
 }
 
 @media (max-width: 768px) {
@@ -331,7 +335,7 @@ body {
   .assinatura {
     flex-direction: column;
     padding: 50px 6%;
-    margin-top: 20px;
+    margin-top: -60px;
     text-align: center;
     gap: 25px;
   }
