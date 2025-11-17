@@ -81,7 +81,7 @@ footer .redes_sociais img {
   color: #fff;
   padding: 6px 30px;
   height: 40px;
-  font-size: 0.85rem;
+  font-size: 1.2rem;
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.2s ease;
@@ -215,7 +215,7 @@ footer .redes_sociais img {
   }
 
   footer img {
-    height: 60px;
+    height: 100px;
   }
 
   footer .redes_sociais img {

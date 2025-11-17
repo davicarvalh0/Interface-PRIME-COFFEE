@@ -3,6 +3,13 @@ body {
   margin: 0;
   background-color: #dcc7a1;
   color: #3a1f04;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
 }
 
 header {
@@ -34,7 +41,7 @@ nav a {
   text-decoration: none;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: 1.05rem;
+  font-size: 1.2rem;
 }
 
 nav a:hover {
@@ -46,13 +53,14 @@ html {
 }
 
 .login {
+  font-family: "Poppins", sans-serif;
   background-color: #000;
   border: none;
   color: #c69c48;
   padding: 8px 20px;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   font-weight: 500;
   transition: all 0.2s ease;
 }
@@ -63,7 +71,8 @@ html {
 
 .comeco {
   display: flex;
-  align-items: center;
+  flex-wrap: nowrap;
+  align-items: flex-start;
   justify-content: space-between;
   padding: 60px 0%;
   gap: 40px;
@@ -215,7 +224,7 @@ footer {
 }
 
 footer img {
-  height: 80px;
+  height: 100px;
 }
 
 footer .redes_sociais img {
@@ -231,7 +240,7 @@ footer .redes_sociais img {
   color: #fff;
   padding: 6px 30px;
   height: 40px;
-  font-size: 0.85rem;
+  font-size: 1.2rem;
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.2s ease;
@@ -243,40 +252,25 @@ body {
 }
 
 /* responsividade feita com ia */
-@media (max-width: 1024px) {
-  header {
-    padding: 15px 6%;
-  }
 
+@media (max-width: 1024px) and (min-width: 769px) {
   .comeco {
-    padding: 40px 3%;
-    gap: 20px;
-  }
-
-  .cafe-image {
-    max-width: 50%;
-  }
-
-  .cafe-image img {
-    max-width: 360px;
+    padding: 40px 4%;
+    gap: 16px;
   }
 
   .comeco-texto {
-    padding-left: 6%;
-    max-width: 450px;
+    padding-left: 0;
+    max-width: 380px;
   }
 
-  .comeco-texto h1 {
-    font-size: 3rem;
+  .cafe-image {
+    margin-left: 0;
   }
 
-  .assinatura {
-    padding: 80px 8%;
-    margin-top: -80px;
-  }
-
-  .feedback {
-    padding: 70px 8%;
+  .cafe-image img {
+    max-width: 280px;
+    width: 100%;
   }
 }
 
@@ -310,7 +304,7 @@ body {
   /* SEÇÃO INICIAL */
   .comeco {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     text-align: center;
     padding: 40px 6%;
     gap: 25px;
@@ -322,16 +316,20 @@ body {
   }
 
   .comeco-texto h1 {
+    margin-right: 60px;
+    text-align: center;
     font-size: 2.4rem;
   }
 
   .comeco-texto p {
+    margin-right: 60px;
+    text-align: center;
     font-size: 1rem;
     text-align: justify;
   }
 
-  .cafe-image img {
-    max-width: 240px;
+  .cafe-image {
+    display: none;
   }
 
   /* ASSINATURA */
@@ -398,6 +396,38 @@ body {
   html,
   body {
     overflow-x: hidden;
+  }
+}
+
+@media (max-width: 1026px) {
+  .comeco {
+    display: block;
+    padding: 40px 16px; /* espaço igual dos dois lados */
+    text-align: left; /* título e texto começam à esquerda */
+  }
+
+  .comeco-texto {
+    margin: 0;
+    padding: 0; /* nada de padding negativo */
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .comeco-texto h1 {
+    text-align: center; /* se quiser o título centralizado */
+    font-size: 2.4rem;
+    margin: 0 0 20px 0;
+  }
+
+  .comeco-texto p {
+    text-align: justify;
+    padding-right: 25px;
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .cafe-image {
+    display: none !important;
   }
 }
 
