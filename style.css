@@ -399,7 +399,7 @@ body {
   }
 }
 
-@media (max-width: 1026px) {
+@media (max-width: 900px) {
   .comeco {
     display: block;
     padding: 40px 16px; /* espaço igual dos dois lados */
