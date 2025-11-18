@@ -1,4 +1,4 @@
-# ☕ Interface - PRIME COFFEE
+# Interface - PRIME COFFEE
 
 Landing page desenvolvida como parte do **Trabalho Final da disciplina de Interface Homem-Máquina (IHM)** do **IF Baiano – Campus Guanambi**.  
 O projeto busca representar visualmente a marca **PRIME COFFEE**, destacando sua identidade sofisticada e aconchegante, com foco em **usabilidade, estética e responsividade**.
