@@ -33,7 +33,7 @@ O protótipo foi criado no **Figma**, com uma identidade visual que reflete o co
 |-------------|------------|
 | **HTML5** | Estrutura semântica da página |
 | **CSS3** | Estilização e responsividade |
-| **Flexbox** | Organização dos blocos e seções |
+| **JavaScript** | Funcionalidades interativas, como linkagem de botões, navegação e ações dinâmicas |
 | **Google Fonts** | Tipografia “Poppins” |
 | **Git/GitHub** | Controle de versão e hospedagem do projeto |
 
