@@ -256,6 +256,7 @@ body {
 
 /* responsividade feita com ia */
 
+/* Tablets */
 @media (max-width: 1024px) and (min-width: 769px) {
   .comeco {
     flex-direction: column;
@@ -265,30 +266,25 @@ body {
   }
 
   .comeco-texto {
-    padding-left: 0 !important; /* Força remover o padding-left */
-    padding-right: 0;
+    padding: 0 20px !important;
     max-width: 100%;
     width: 100%;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    box-sizing: border-box;
   }
 
   .comeco-texto h1 {
-    text-align: center; /* Garante que o título fique centralizado */
+    text-align: center;
   }
 
   .comeco-texto p {
     text-align: justify;
-    padding: 0;
-    width: auto;
-    max-width: 800px;
+    padding-right: 50px;
     margin: 0;
     box-sizing: border-box;
   }
 
-  .cafe-image img {
+  .cafe-image {
     display: none !important;
   }
 
@@ -297,6 +293,7 @@ body {
   }
 }
 
+/* Mobile */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -327,15 +324,16 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 40px 6%;
+    padding: 40px 0;
     gap: 25px;
   }
 
   .comeco-texto {
-    align-items: center;
+    padding: 0 20px !important;
     max-width: 100%;
     width: 100%;
-    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
   }
 
   .comeco-texto h1 {
@@ -344,18 +342,17 @@ body {
   }
 
   .comeco-texto p {
-    align-items: center;
     text-align: justify;
-    padding: 0 20px;
+    padding: 0 30px;
     width: 100%;
-    margin: 0 auto;
+    margin: 0;
+    box-sizing: border-box;
   }
 
   .cafe-image {
     display: none !important;
   }
 
-  /* ASSINATURA */
   .assinatura {
     flex-direction: column;
     padding: 50px 6%;
@@ -372,7 +369,6 @@ body {
     font-size: 1.6rem;
   }
 
-  /* FEEDBACK (CAIXAS) */
   .feedback {
     padding: 60px 6%;
   }
@@ -390,7 +386,6 @@ body {
     padding: 22px 18px;
   }
 
-  /* FOOTER */
   footer {
     flex-direction: column;
     text-align: center;
@@ -415,100 +410,43 @@ body {
     max-width: 220px;
   }
 
-  /* PREVENÇÃO DE SCROLL LATERAL */
   html,
   body {
     overflow-x: hidden;
   }
 }
 
-@media (max-width: 1026px) {
+/* Telas muito pequenas (abaixo de 300px) */
+@media (max-width: 300px) {
   .comeco {
-    display: block;
-    padding: 40px 16px; /* espaço igual dos dois lados */
-    text-align: left; /* título e texto começam à esquerda */
+    padding: 30px 0 !important;
   }
 
   .comeco-texto {
-    margin: 0;
-    padding: 0; /* nada de padding negativo */
-    max-width: 100%;
-    width: 100%;
+    padding: 0 10px !important; /* Reduzi o padding */
   }
 
   .comeco-texto h1 {
-    text-align: center; /* se quiser o título centralizado */
-    font-size: 2.4rem;
-    margin: 0 0 20px 0;
+    font-size: 1.8rem !important; /* Título menor */
   }
 
   .comeco-texto p {
-    text-align: justify;
-    padding-right: 25px;
-    font-size: 1rem;
-    margin: 0;
-  }
-
-  .cafe-image {
-    display: none !important;
-  }
-}
-
-@media (max-width: 600px) {
-  header {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 20px 5%;
-    text-align: center;
-  }
-
-  .menu-login {
-    width: 100%;
-    justify-content: center;
-    gap: 15px;
-  }
-
-  nav {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px;
-    width: 100%;
+    font-size: 0.9rem; /* Texto menor */
   }
 
   nav a {
-    font-size: 0.9rem;
+    font-size: 0.75rem !important;
   }
 
-  .comeco {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 40px 6%;
-    gap: 25px;
+  .assinatura {
+    padding: 30px 3% !important;
   }
 
-  .comeco-texto {
-    align-items: center;
-    max-width: 100%;
-    width: 100%;
-    padding: 0;
+  .feedback {
+    padding: 40px 3% !important;
   }
 
-  .comeco-texto h1 {
-    text-align: center;
-    font-size: 2.4rem;
-  }
-
-  .comeco-texto p {
-    align-items: center;
-    text-align: justify;
-    padding: 0 20px;
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .cafe-image {
-    display: none !important;
+  .caixa {
+    padding: 15px 10px !important;
   }
 }
