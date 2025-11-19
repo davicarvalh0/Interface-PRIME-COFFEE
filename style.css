@@ -1,8 +1,15 @@
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
-  background-color: #f5e5c0;
+  background-color: #dcc7a1;
   color: #3a1f04;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
 }
 
 header {
@@ -11,7 +18,7 @@ header {
   align-items: center;
   background-color: #32160f;
   color: #fff;
-  padding: 15px 60px;
+  padding: 15px 10%;
 }
 
 header .logo img {
@@ -32,23 +39,28 @@ nav {
 nav a {
   color: #c69c48;
   text-decoration: none;
-  font-family: Poppins;
-  font-size: 600;
-  font-weight: 1.05rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
 }
 
 nav a:hover {
   color: #fff;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .login {
+  font-family: "Poppins", sans-serif;
   background-color: #000;
   border: none;
   color: #c69c48;
   padding: 8px 20px;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   font-weight: 500;
   transition: all 0.2s ease;
 }
@@ -59,13 +71,19 @@ nav a:hover {
 
 .comeco {
   display: flex;
-  align-items: center;
+  flex-wrap: nowrap;
+  align-items: flex-start;
   justify-content: space-between;
-  padding: 80px 10%;
+  padding: 60px 0%;
+  gap: 40px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .comeco-texto {
-  width: 55%;
+  color: #7a5230;
+  max-width: 550px;
+  padding-left: 12%;
 }
 
 .paginainicial {
@@ -73,29 +91,41 @@ nav a:hover {
 }
 
 .comeco-texto h1 {
-  font-family: Playfair Display;
-  font-size: 2.5rem;
+  font-family: "Playfair Display";
+  font-weight: bolder;
+  font-size: 3.5rem;
+  margin-bottom: 20px;
   color: #32160f;
 }
 
 .comeco-texto p {
-  font-family: Poppins;
-  color: #7a5230;
-  line-height: 1.6;
+  font-family: "Poppins", sans-serif;
   font-size: 1.1rem;
+  line-height: 1.6;
+  color: #7a5230;
+  text-align: justify;
+}
+
+.cafe-image {
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .cafe-image img {
-  border-radius: 12px;
-  width: 380px;
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  object-fit: contain;
 }
 
 .assinatura {
-  background-color: #dcc7a1 !important;
+  background-color: #dcc7a1;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 80px 10%;
+  padding: 120px 15%;
+  margin-top: -120px;
   gap: 60px;
 }
 
@@ -105,7 +135,7 @@ nav a:hover {
 
 .assinatura h3 {
   text-transform: uppercase;
-  color: #4a2a0a;
+  color: #7a5230;
   font-weight: 600;
   font-size: 0.9rem;
 }
@@ -118,29 +148,35 @@ nav a:hover {
 .assinatura p {
   margin: 20px 0;
   line-height: 1.5;
+  color: #7a5230;
 }
 
 .assinatura button {
-  background-color: #3a1f04;
-  color: #fff;
+  background-color: #c69c48;
+  color: #000;
+  font-weight: bolder;
   border: none;
   padding: 10px 25px;
-  border-radius: 6px;
-  cursor: pointer;
+  border-radius: 21px;
 }
 
 .assinatura button:hover {
-  background-color: #2c1603;
+  background-color: #000;
+  color: #fff;
+  transition: all 0.3s ease;
 }
 
 .assinatura img {
+  width: 100%;
+  max-width: 680px;
+  height: auto;
   border-radius: 20px;
-  width: 300px;
+  object-fit: cover;
 }
 
 .feedback {
   padding: 80px 10%;
-  background-color: #f5e5c0;
+  background-color: #dcc7a1;
   text-align: center;
 }
 
@@ -158,12 +194,19 @@ nav a:hover {
 }
 
 .caixa {
+  display: flex;
   background-color: #7a5230;
   color: #fff;
   text-align: justify;
-  padding: 20px;
+  padding: 35px;
+  flex-wrap: wrap;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.caixa h4 {
+  margin-left: 15px;
+  margin-top: 15px;
 }
 
 footer {
@@ -172,24 +215,24 @@ footer {
   background-color: #fff;
   color: #7a5230;
   text-align: center;
-  padding: 30px 10%;
+  padding: 20px 10%;
   position: relative;
+  align-items: center;
 }
 
 .footer {
+  flex-direction: column;
   display: flex;
   align-items: center;
-  gap: 20px;
 }
 
 footer img {
   height: 100px;
 }
 
-footer .redes_sociais a {
-  color: #7a5230;
-  text-decoration: none;
-  margin: 0 5px;
+footer .redes_sociais img {
+  width: 42px;
+  height: 42px;
 }
 
 #topo {
@@ -198,37 +241,200 @@ footer .redes_sociais a {
   background-color: #000;
   border: none;
   color: #fff;
-  padding: 4px 20px;
-  font-size: 0.85rem;
+  padding: 6px 30px;
+  height: 40px;
+  font-size: 1.2rem;
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.2s ease;
 }
 
-/* responsivo */
-@media (max-width: 900px) {
-  .assinatura,
+html,
+body {
+  overflow-x: hidden;
+}
+
+/* responsividade feita com ia */
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .comeco {
+    padding: 40px 4%;
+    gap: 16px;
+  }
+
+  .comeco-texto {
+    padding-left: 0;
+    max-width: 380px;
+  }
+
+  .cafe-image img {
+    display: none !important;
+  }
+
   .assinatura {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .assinatura-text,
-  .assinatura .texto {
-    width: 100%;
-  }
-
-  .cafe-image img,
-  .assinatura img {
-    width: 80%;
-    margin-top: 20px;
+    margin-bottom: -120px !important;
   }
 }
 
 @media (max-width: 768px) {
+  /* HEADER */
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 5%;
+    text-align: center;
+  }
+
+  .menu-login {
+    width: 100%;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+  }
+
+  /* SEÇÃO INICIAL */
+  .comeco {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    padding: 40px 6%;
+    gap: 25px;
+  }
+
+  .comeco-texto {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .comeco-texto h1 {
+    text-align: center;
+    font-size: 2.4rem;
+  }
+
+  .comeco-texto p {
+    text-align: justify;
+    font-size: 1rem;
+    text-align: center;
+    padding: 0 20px;
+    margin: 0;
+  }
+
+  .cafe-image {
+    display: none !important;
+  }
+
+  /* ASSINATURA */
+  .assinatura {
+    flex-direction: column;
+    padding: 50px 6%;
+    margin-top: -60px;
+    text-align: center;
+    gap: 25px;
+  }
+
+  .assinatura img {
+    max-width: 100%;
+  }
+
+  .assinatura h2 {
+    font-size: 1.6rem;
+  }
+
+  /* FEEDBACK (CAIXAS) */
+  .feedback {
+    padding: 60px 6%;
+  }
+
+  .feedback h2 {
+    font-size: 1.8rem;
+  }
+
+  .caixas {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .caixa {
+    padding: 22px 18px;
+  }
+
+  /* FOOTER */
   footer {
     flex-direction: column;
     text-align: center;
-    gap: 15px;
+    gap: 20px;
+    padding: 30px 5%;
+  }
+
+  footer img {
+    height: 60px;
+  }
+
+  .redes_sociais img {
+    width: 32px;
+    height: 32px;
+  }
+
+  #topo {
+    width: 100%;
+    height: auto;
+    padding: 12px;
+    margin-left: 0;
+    max-width: 220px;
+  }
+
+  /* PREVENÇÃO DE SCROLL LATERAL */
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 1026px) {
+  .comeco {
+    display: block;
+    padding: 40px 16px; /* espaço igual dos dois lados */
+    text-align: left; /* título e texto começam à esquerda */
+  }
+
+  .comeco-texto {
+    margin: 0;
+    padding: 0; /* nada de padding negativo */
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .comeco-texto h1 {
+    text-align: center; /* se quiser o título centralizado */
+    font-size: 2.4rem;
+    margin: 0 0 20px 0;
+  }
+
+  .comeco-texto p {
+    text-align: justify;
+    padding-right: 25px;
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .cafe-image {
+    display: none !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .cafe-image {
+    display: none !important;
   }
 }
