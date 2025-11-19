@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #f5e5c0;
+  color: #3a1f04;
+  font-family: "Poppins", sans-serif;
+}
+
+.vertical {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ===== HEADER ===== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #32160f;
+  color: #fff;
+  padding: 1rem 3.75rem;
+}
+
+header .logo img {
+  height: 4.063rem;
+}
+
+header nav {
+  margin-left: auto;
+}
+
+header nav a {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  border: 2px solid #5a3620;
+  border-radius: 8px;
+  background-color: transparent;
+  color: #fff;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+header nav a:hover {
+  background-color: #5a3620;
+  border-color: #7a5230;
+}
+
+/* ===== MAIN ===== */
+main {
+  flex: 1;
+  padding: 2rem 1rem;
+}
+
+section {
+  margin-bottom: 5rem;
+}
+
+/* ===== TEXTOS ===== */
+.bloco-texto {
+  margin-bottom: 3rem;
+}
+
+h1 {
+  text-align: center;
+  margin: 2rem auto 2rem;
+  font-size: 3.5rem;
+  font-family: "Playfair Display", serif;
+  color: #32160f;
+  max-width: 68.75rem;
+  line-height: 1.2;
+  padding: 0 1rem;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  color: #7a5230;
+  line-height: 1.8;
+  font-size: 1.5rem;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 81.25rem;
+  padding: 0 1rem;
+}
+
+/* ===== IMAGENS ===== */
+.image {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  object-fit: cover;
+  gap: 2rem;
+  margin: 3rem auto;
+  max-width: 90%;
+  padding: 0 1rem;
+  border-radius: 100px;
+  padding: 2rem;
+}
+
+.image img {
+  width: calc(50% - 1rem);
+  max-width: 600px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: none;
+}
+
+/* Última imagem centralizada sozinha */
+.image-single img {
+  width: 30%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #32160f;
+  color: #fff;
+  padding: 2rem 3.75rem;
+  text-align: center;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer img {
+  height: 4rem;
+}
+
+.redes_sociais {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.redes_sociais a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+}
+
+.redes_sociais a:hover {
+  transform: scale(1.2);
+}
+
+.redes_sociais img {
+  width: 100%;
+  height: 100%;
+  filter: brightness(0) invert(1);
+}
+
+.redes_sociais img:hover {
+  filter: brightness(0) invert(0.8);
+}
+
+/* ===== BOTÃO VOLTAR AO TOPO ===== */
+#topo {
+  background-color: #5a3620;
+  color: #fff;
+  border: 2px solid #7a5230;
+  padding: 1rem 2.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 2rem auto 0;
+  display: block;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+#topo:hover {
+  background-color: #7a5230;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+#topo:active {
+  transform: translateY(-1px);
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media only screen and (max-width: 1024px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 2rem;
+  }
+
+  header nav {
+    margin-left: 0;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin: 1.5rem auto;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  .image img {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  section {
+    margin-bottom: 3rem;
+  }
+
+  footer {
+    padding: 2rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  header {
+    padding: 1rem;
+  }
+
+  header .logo img {
+    height: 3rem;
+  }
+
+  header nav a {
+    padding: 0.5rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .image {
+    gap: 1rem;
+  }
+
+  .image img {
+    width: 100%;
+  }
+
+  .redes_sociais a {
+    width: 35px;
+    height: 35px;
+  }
+
+  #topo {
+    padding: 0.75rem 2rem;
+    font-size: 0.9rem;
+  }
+}
