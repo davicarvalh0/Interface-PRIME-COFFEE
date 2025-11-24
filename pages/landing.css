@@ -1,0 +1,637 @@
+/* === ESTILOS GERAIS === */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background-color: #dcc7a1;
+  color: #3a1f04;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+/* === HEADER === */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #32160f;
+  color: #fff;
+  padding: 15px 10%;
+}
+
+header .logo img {
+  height: 65px;
+}
+
+.menu-login {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  color: #c69c48;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+.login {
+  font-family: "Poppins", sans-serif;
+  background-color: #000;
+  border: none;
+  color: #c69c48;
+  padding: 8px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.login:hover {
+  background-color: #fff;
+}
+
+/* === SEÇÃO INÍCIO === */
+.comeco {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 60px 0%;
+  gap: 40px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.comeco-texto {
+  color: #7a5230;
+  max-width: 550px;
+  padding-left: 12%;
+}
+
+.comeco-texto h1 {
+  font-family: "Playfair Display";
+  font-weight: bolder;
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  color: #32160f;
+}
+
+.comeco-texto p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #7a5230;
+  text-align: justify;
+}
+
+.cafe-image {
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cafe-image img {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* === SEÇÃO ASSINATURA === */
+.assinatura {
+  background-color: #dcc7a1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 120px 15%;
+  margin-top: -120px;
+  gap: 60px;
+}
+
+.assinatura .texto {
+  max-width: 450px;
+}
+
+.assinatura h3 {
+  text-transform: uppercase;
+  color: #7a5230;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.assinatura h2 {
+  font-size: 2rem;
+  color: #3a1f04;
+}
+
+.assinatura p {
+  margin: 20px 0;
+  line-height: 1.5;
+  color: #7a5230;
+}
+
+.assinatura button {
+  background-color: #c69c48;
+  color: #000;
+  font-weight: bolder;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 21px;
+  cursor: pointer;
+}
+
+.assinatura button:hover {
+  background-color: #000;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.assinatura img {
+  width: 100%;
+  max-width: 680px;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* === TÍTULOS DE SEÇÃO === */
+.section-title {
+  font-family: "Playfair Display";
+  color: #32160f;
+  text-align: center;
+  font-size: 50px;
+  margin: 60px 0 40px;
+}
+
+/* === SEÇÃO CARDÁPIO (CARDS GRID) === */
+.cardapio-section {
+  padding: 40px 0;
+  background-color: #dcc7a1;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 30px 15%;
+}
+
+.cards a {
+  text-decoration: none;
+}
+
+.card {
+  background-color: #2c120d;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  width: 200px;
+  flex: 0 0 auto;
+  height: 300px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #c69c48;
+  font-family: "Playfair Display";
+}
+
+.card .preco {
+  font-family: "Poppins";
+  display: block;
+  margin-top: 5px;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.card-img {
+  width: 100%;
+  height: 170px;
+  object-fit: contain;
+  display: block;
+}
+
+/* === SEÇÃO RECOMENDAÇÕES (CARDS HORIZONTAIS) === */
+.recomendacoes-section {
+  padding: 40px 0;
+  background-color: #dcc7a1;
+}
+
+.cards2 {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 40px 10%;
+}
+
+.card-horizontal {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #2c120d;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.card-horizontal img {
+  width: 150px;
+  flex-shrink: 0;
+}
+
+.nome-e-preco {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+}
+
+.nome-e-preco h1 {
+  margin: 0;
+  font-size: 2.4rem;
+  color: #c69c48;
+  font-family: "Playfair Display";
+}
+
+.nome-e-preco span {
+  font-size: 1.3rem;
+  color: #dcc7a1;
+  font-family: "Poppins";
+  font-weight: 600;
+}
+
+.card-horizontal p {
+  text-align: justify;
+  margin: 0;
+  color: #fff;
+  line-height: 1.6;
+  font-size: 1.15rem;
+}
+
+/* === SEÇÃO FEEDBACK === */
+.feedback {
+  padding: 80px 10%;
+  background-color: #dcc7a1;
+  text-align: center;
+}
+
+.feedback h2 {
+  font-family: "Playfair Display";
+  color: #32160f;
+  margin-bottom: 30px;
+  font-size: 50px;
+}
+
+.caixas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
+}
+
+.caixa {
+  display: flex;
+  background-color: #7a5230;
+  color: #fff;
+  text-align: justify;
+  padding: 35px;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.caixa h4 {
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+/* === FOOTER === */
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  color: #7a5230;
+  text-align: center;
+  padding: 20px 10%;
+  position: relative;
+  align-items: center;
+}
+
+.footer {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+footer img {
+  height: 100px;
+}
+
+footer .redes_sociais img {
+  width: 42px;
+  height: 42px;
+}
+
+#topo {
+  right: 10%;
+  bottom: 20px;
+  background-color: #000;
+  border: none;
+  color: #fff;
+  padding: 6px 30px;
+  height: 40px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#topo:hover {
+  background-color: #c69c48;
+  color: #000;
+}
+
+/* === RESPONSIVIDADE === */
+
+/* Tablets */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .comeco {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 4%;
+    gap: 16px;
+  }
+
+  .comeco-texto {
+    padding: 0 20px !important;
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .comeco-texto h1 {
+    text-align: center;
+  }
+
+  .comeco-texto p {
+    text-align: justify;
+    padding-right: 70px;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .cafe-image {
+    display: none !important;
+  }
+
+  .assinatura {
+    margin-bottom: -120px !important;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  /* HEADER */
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 5%;
+    text-align: center;
+  }
+
+  .menu-login {
+    width: 100%;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+  }
+
+  /* SEÇÃO INÍCIO */
+  .comeco {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 0;
+    gap: 25px;
+  }
+
+  .comeco-texto {
+    padding: 0 20px !important;
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .comeco-texto h1 {
+    text-align: center;
+    font-size: 2.4rem;
+  }
+
+  .comeco-texto p {
+    text-align: justify;
+    padding: 0 40px;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .cafe-image {
+    display: none !important;
+  }
+
+  /* ASSINATURA */
+  .assinatura {
+    flex-direction: column;
+    padding: 50px 6%;
+    margin-top: -60px;
+    text-align: center;
+    gap: 25px;
+  }
+
+  .assinatura img {
+    max-width: 100%;
+  }
+
+  .assinatura h2 {
+    font-size: 1.6rem;
+  }
+
+  /* SEÇÃO TÍTULOS */
+  .section-title {
+    font-size: 2rem;
+  }
+
+  /* CARDS GRID */
+  .cards {
+    padding: 30px 15%;
+    gap: 40px;
+  }
+
+  .card {
+    max-width: 150px;
+    max-height: 300px;
+    width: 100%;
+    padding: 15px;
+    height: auto;
+  }
+
+  .card-img {
+    width: 140px;
+    height: 140px;
+  }
+
+  /* CARDS HORIZONTAIS */
+  .cards2 {
+    padding: 20px 6%;
+    gap: 20px;
+  }
+
+  .card-horizontal {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .card-horizontal img {
+    width: 120px;
+  }
+
+  .nome-e-preco h1 {
+    font-size: 1.9rem;
+  }
+
+  .nome-e-preco span {
+    font-size: 1.1rem;
+  }
+
+  .card-horizontal p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  /* FEEDBACK */
+  .feedback {
+    padding: 60px 6%;
+  }
+
+  .feedback h2 {
+    font-size: 1.8rem;
+  }
+
+  .caixas {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .caixa {
+    padding: 22px 18px;
+  }
+
+  /* FOOTER */
+  footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 30px 5%;
+  }
+
+  footer img {
+    height: 60px;
+  }
+
+  .redes_sociais img {
+    width: 32px;
+    height: 32px;
+  }
+
+  #topo {
+    width: 100%;
+    height: auto;
+    padding: 12px;
+    margin-left: 0;
+    max-width: 220px;
+  }
+}
+
+/* Telas muito pequenas (abaixo de 300px) */
+@media (max-width: 300px) {
+  .comeco {
+    padding: 30px 0 !important;
+  }
+
+  .comeco-texto {
+    padding: 0 10px !important;
+  }
+
+  .comeco-texto h1 {
+    font-size: 1.8rem !important;
+  }
+
+  .comeco-texto p {
+    font-size: 0.9rem;
+  }
+
+  nav a {
+    font-size: 0.75rem !important;
+  }
+
+  .assinatura {
+    padding: 30px 3% !important;
+  }
+
+  .feedback {
+    padding: 40px 3% !important;
+  }
+
+  .caixa {
+    padding: 15px 10px !important;
+  }
+}

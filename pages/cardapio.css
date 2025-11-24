@@ -92,6 +92,11 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: trasnform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
 }
 
 .card-horizontal {
