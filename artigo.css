@@ -95,27 +95,24 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  object-fit: cover;
   gap: 2rem;
   margin: 3rem auto;
   max-width: 90%;
   padding: 0 1rem;
-  border-radius: 100px;
-  padding: 2rem;
 }
 
 .image img {
   width: calc(50% - 1rem);
   max-width: 600px;
-  height: auto;
+  height: 350px;
   object-fit: cover;
-  border-radius: 5px;
+  border-radius: 2rem;
   box-shadow: none;
 }
 
 /* Última imagem centralizada sozinha */
 .image-single img {
-  width: 30%;
+  width: 100%;
   max-width: 600px;
   margin: 0 auto;
 }
