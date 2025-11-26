@@ -119,28 +119,37 @@ p {
 
 /* ===== FOOTER ===== */
 footer {
-  background-color: #32160f;
-  color: #fff;
+  background-color: #ffff;
+  color: #32160f;
   padding: 2rem 3.75rem;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .footer {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-  margin-bottom: 2rem;
+  align-items: flex-start;
+  gap: 0rem;
+  margin-bottom: 0rem;
 }
 
 .footer img {
   height: 4rem;
 }
 
+.logo {
+  width: auto;
+  margin-left: calc(
+    (25px * 4 + 1.5rem * 3 - 4rem) / 2
+  ); /* aqui foi ideia do chat rsrsrs */
+}
+
 .redes_sociais {
   display: flex;
   gap: 1.5rem;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -163,11 +172,10 @@ footer {
 .redes_sociais img {
   width: 100%;
   height: 100%;
-  filter: brightness(0) invert(1);
 }
 
 .redes_sociais img:hover {
-  filter: brightness(0) invert(0.8);
+  filter: 1.2rem;
 }
 
 /* ===== BOTÃO VOLTAR AO TOPO ===== */
@@ -178,11 +186,13 @@ footer {
   padding: 1rem 2.5rem;
   border-radius: 8px;
   cursor: pointer;
-  margin: 2rem auto 0;
+  margin: 0;
   display: block;
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
   transition: all 0.3s ease;
+  align-self: flex-end;
+  margin-bottom: 1rem;
 }
 
 #topo:hover {
