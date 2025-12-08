@@ -24,15 +24,16 @@ header {
   align-items: center;
   background-color: #32160f;
   color: #fff;
-  padding: 15px 10%;
+  padding: 15px 5%;
+  gap: 2rem;
+}
+
+header .logo {
+  margin-left: -12px;
 }
 
 header .logo img {
   height: 4.063rem;
-}
-
-header nav {
-  margin-left: auto;
 }
 
 header nav a {
