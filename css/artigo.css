@@ -24,7 +24,7 @@ header {
   align-items: center;
   background-color: #32160f;
   color: #fff;
-  padding: 1rem 3.75rem;
+  padding: 15px 10%;
 }
 
 header .logo img {
@@ -38,9 +38,8 @@ header nav {
 header nav a {
   display: inline-block;
   padding: 0.75rem 2rem;
-  border: 2px solid #5a3620;
   border-radius: 8px;
-  background-color: transparent;
+  background-color: #000;
   color: #fff;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
@@ -49,8 +48,8 @@ header nav a {
 }
 
 header nav a:hover {
-  background-color: #5a3620;
-  border-color: #7a5230;
+  background-color: #fff;
+  color: #000;
 }
 
 /* ===== MAIN ===== */
@@ -121,7 +120,7 @@ p {
 footer {
   background-color: #ffff;
   color: #32160f;
-  padding: 2rem 3.75rem;
+  padding: 15px 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -180,9 +179,8 @@ footer {
 
 /* ===== BOTÃO VOLTAR AO TOPO ===== */
 #topo {
-  background-color: #5a3620;
+  background-color: #000;
   color: #fff;
-  border: 2px solid #7a5230;
   padding: 1rem 2.5rem;
   border-radius: 8px;
   cursor: pointer;
@@ -196,7 +194,6 @@ footer {
 }
 
 #topo:hover {
-  background-color: #7a5230;
   transform: translateY(-3px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
