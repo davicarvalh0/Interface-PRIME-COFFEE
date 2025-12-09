@@ -385,6 +385,212 @@ footer .redes_sociais img {
   color: #000;
 }
 
+footer .redes_sociais img {
+  width: 42px;
+  height: 42px;
+}
+
+.redes_sociais {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.redes_sociais a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+}
+
+.redes_sociais a:hover {
+  transform: scale(1.2);
+}
+
+.redes_sociais img {
+  width: 100%;
+  height: 100%;
+}
+
+.redes_sociais img:hover {
+  filter: 1.2rem;
+}
+
+.bloco-texto {
+  margin-bottom: 3rem;
+}
+
+.bloco-texto h1 {
+  text-align: center;
+  margin: 2rem auto 2rem;
+  font-size: 3.5rem;
+  font-family: "Playfair Display", serif;
+  color: #32160f;
+  max-width: 68.75rem;
+  line-height: 1.2;
+  padding: 0 1rem;
+}
+
+.bloco-texto p {
+  font-family: "Poppins", sans-serif;
+  color: #7a5230;
+  line-height: 1.8;
+  font-size: 1.5rem;
+  margin: 0 auto;
+  text-align: justify;
+  max-width: 81.25rem;
+  padding: 0 1rem;
+}
+
+.image {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 3rem auto;
+  max-width: 90%;
+  padding: 0 1rem;
+}
+
+.image img {
+  width: calc(50% - 1rem);
+  max-width: 600px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 2rem;
+  box-shadow: none;
+}
+
+/* Última imagem centralizada sozinha */
+.image-single img {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.criar-conta {
+  margin-top: 2.5rem;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #32160f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.create-account {
+  background-color: transparent;
+  border: 2px solid #5a3620;
+  color: #32160f;
+  font-size: 1rem;
+  padding: 0.6rem;
+  width: 450px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-bottom: -0.5rem;
+}
+
+.create-account:hover {
+  background-color: #5a3620;
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.create-account:active {
+  transform: translateY(-1px);
+}
+
+.logins img {
+  width: 35px;
+  max-width: 100%;
+}
+
+button img {
+  margin-right: 10px;
+}
+
+/* ===== BOTOES ===== */
+.logins button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  padding: 0.6rem;
+  width: 450px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 0.9rem auto;
+}
+
+.logins h1 {
+  text-align: center;
+}
+
+.texto-assinatura h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  color: #32160f;
+}
+
+.facebook button {
+  background-color: #4267b2;
+  color: white;
+  padding: 0.6rem;
+}
+
+.google button {
+  background-color: white;
+  color: black;
+  padding: 0.6rem;
+}
+
+.apple button {
+  background-color: black;
+  color: white;
+  padding: 0.6rem;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+  transform: translateY(-1px);
+}
+
+.create-account {
+  background-color: #5a3620;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.6rem;
+  width: 450px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-bottom: -0.5rem;
+}
+
+.create-account:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.create-account:active {
+  transform: translateY(-1px);
+}
+
 /* === RESPONSIVIDADE === */
 
 /* Tablets */
@@ -573,31 +779,6 @@ footer .redes_sociais img {
 
   .caixa {
     padding: 22px 18px;
-  }
-
-  /* FOOTER */
-  footer {
-    flex-direction: column;
-    text-align: center;
-    gap: 20px;
-    padding: 30px 5%;
-  }
-
-  footer img {
-    height: 60px;
-  }
-
-  .redes_sociais img {
-    width: 32px;
-    height: 32px;
-  }
-
-  #topo {
-    width: 100%;
-    height: auto;
-    padding: 12px;
-    margin-left: 0;
-    max-width: 220px;
   }
 }
 
