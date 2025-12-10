@@ -76,14 +76,14 @@ button {
   justify-content: center;
   align-items: center;
   font-size: 1rem;
-  padding: 0.6rem;
+  padding: 0.75rem 1.5rem;
   width: 450px;
   max-width: 100%;
   border: none;
   border-radius: 10px;
   cursor: pointer;
   transition: 0.3s;
-  margin: 0.9rem auto;
+  margin: 0.9rem 0;
 }
 
 .texto-assinatura h1 {
@@ -113,6 +113,7 @@ button {
 .criar-conta {
   max-width: 450px;
   margin: 0 auto;
+  padding: 0 1rem;
   box-sizing: border-box;
 }
 
@@ -170,6 +171,7 @@ footer {
   align-items: center;
   justify-content: center;
   position: relative;
+  margin-top: auto;
 }
 
 .footer {
@@ -230,13 +232,18 @@ footer {
   }
 
   main {
-    padding: 1rem;
+    padding: 2rem 1.5rem;
   }
 
   footer {
-    flex-direction: column;
-    gap: 1.5rem;
-    text-align: center;
+    padding: 2rem 1.5rem;
+  }
+
+  .facebook,
+  .google,
+  .apple,
+  .criar-conta {
+    padding: 0 0.5rem;
   }
 }
 
@@ -246,6 +253,11 @@ footer {
   }
 
   main {
-    padding: 1rem 0.5rem;
+    padding: 1.5rem 1rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 0.7rem 1rem;
   }
 }
