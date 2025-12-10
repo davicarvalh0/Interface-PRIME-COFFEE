@@ -518,6 +518,73 @@ button img {
   margin-right: 10px;
 }
 
+.image {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 3rem auto;
+  max-width: 90%;
+  padding: 0 1rem;
+}
+
+.bloco-texto {
+  margin-bottom: 3rem;
+}
+
+.direita h1 {
+  text-align: center;
+  margin: 2rem auto 2rem;
+  font-size: 3.5rem;
+  font-family: "Playfair Display", serif;
+  color: #32160f;
+  max-width: 68.75rem;
+  line-height: 1.2;
+  padding: 0 1rem;
+}
+
+.direita h2 {
+  font-family: "Poppins", sans-serif;
+  margin: 2.5rem auto 1rem;
+}
+
+.direita p {
+  font-family: "Poppins", sans-serif;
+  color: #7a5230;
+  line-height: 1.8;
+  font-size: 1.5rem;
+  margin: 0 auto;
+  text-align: justify;
+  max-width: 81.25rem;
+  padding: 0 1rem;
+}
+
+.esquerda h1 {
+  text-align: center;
+  margin: 2rem auto 2rem;
+  font-size: 3.5rem;
+  font-family: "Playfair Display", serif;
+  color: #32160f;
+  max-width: 68.75rem;
+  line-height: 1.2;
+  padding: 0 1rem;
+}
+
+.esquerda h2 {
+  font-family: "Poppins", sans-serif;
+  margin: 2.5rem auto 1rem;
+}
+
+.esquerda p {
+  font-family: "Poppins", sans-serif;
+  color: #7a5230;
+  line-height: 1.8;
+  font-size: 1.5rem;
+  margin: 0 auto;
+  text-align: justify;
+  max-width: 81.25rem;
+  padding: 0 1rem;
+}
+
 /* ===== BOTOES ===== */
 .logins button {
   display: flex;
@@ -589,6 +656,69 @@ button:active {
 
 .create-account:active {
   transform: translateY(-1px);
+}
+
+.fale-conosco {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+input {
+  font-family: "Poppins", sans-serif;
+  color: black;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  display: block;
+  width: 230px;
+  align-content: center;
+  margin-bottom: 15px;
+  margin-top: 3px;
+}
+
+.nomesobrenome {
+  column-count: 2;
+}
+
+#sobrenome,
+label[for="sobrenome"] {
+  margin-left: 20px;
+}
+
+input[type="email"] {
+  width: 520px;
+}
+
+textarea {
+  font-family: "Poppins", sans-serif;
+  color: black;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  width: 520px;
+  align-content: center;
+  resize: none;
+  text-align: top;
+  margin-bottom: 15px;
+  margin-top: 3px;
+}
+
+.botaofaleconosco {
+  background-color: black;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  display: block;
+  margin: 1px auto;
+  color: white;
+  padding: 0.7rem;
+  width: 520px;
+  border: none;
+  border-radius: 5px;
+}
+.botaofaleconosco:hover {
+  background-color: green;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 /* === RESPONSIVIDADE === */
